@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Custom Pop Up View Controller-->
+        <scene sceneID="XJZ-U0-GZ0">
+            <objects>
+                <viewController storyboardIdentifier="CustomPopUpViewController" id="N1n-o6-CIU" customClass="CustomPopUpViewController" customModule="Miss_Mauritius" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="GMY-Qk-xqL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exr-hv-G1Z" customClass="DesignableView" customModule="Miss_Mauritius" customModuleProvider="target">
+                                <rect key="frame" x="40" y="298" width="334" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnx-xS-5ge">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning ! " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOe-MM-H5F">
+                                                <rect key="frame" x="25" y="10" width="284" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="KfN-M2-PZE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.86653804779999999" green="0.76124435660000001" blue="0.40464240309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="eOe-MM-H5F" secondAttribute="bottom" constant="10" id="2TF-lx-Ag9"/>
+                                            <constraint firstAttribute="trailing" secondItem="eOe-MM-H5F" secondAttribute="trailing" constant="25" id="LtT-Iw-nNX"/>
+                                            <constraint firstItem="eOe-MM-H5F" firstAttribute="leading" secondItem="Lnx-xS-5ge" secondAttribute="leading" constant="25" id="Ol0-Ge-fHW"/>
+                                            <constraint firstItem="eOe-MM-H5F" firstAttribute="top" secondItem="Lnx-xS-5ge" secondAttribute="top" constant="10" id="UT5-yL-HMV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5W-uw-mtd">
+                                        <rect key="frame" x="0.0" y="45" width="334" height="95"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter mobile no" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXU-Si-LnU">
+                                                <rect key="frame" x="15" y="10" width="304" height="25"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="HgO-ch-pJ1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="795-mN-qDj">
+                                                <rect key="frame" x="57" y="45" width="220" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V5-db-ZPA" customClass="DesignableButton" customModule="Miss_Mauritius" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="40"/>
+                                                        <color key="backgroundColor" red="0.86653804779999999" green="0.76124435660000001" blue="0.40464240309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <state key="normal" title="Yes">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17254901959999999" green="0.74117647060000003" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btn_Yes:" destination="N1n-o6-CIU" eventType="touchUpInside" id="ChR-oG-tOZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0y6-IF-usn" customClass="DesignableButton" customModule="Miss_Mauritius" customModuleProvider="target">
+                                                        <rect key="frame" x="145" y="0.0" width="75" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <state key="normal" title="No">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.86653804779999999" green="0.76124435660000001" blue="0.40464240309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btn_No:" destination="N1n-o6-CIU" eventType="touchUpInside" id="dEO-5T-og4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="AJM-wT-igc"/>
+                                                    <constraint firstItem="0y6-IF-usn" firstAttribute="width" secondItem="7V5-db-ZPA" secondAttribute="width" id="AhU-7k-P2i"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="amo-cc-U8H"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-Xy-eVH">
+                                                <rect key="frame" x="127" y="45" width="80" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYU-2U-eku">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="iFD-mL-gbA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <state key="normal" title="Ok">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.86653804779999999" green="0.76124435660000001" blue="0.40464240309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btn_Ok:" destination="N1n-o6-CIU" eventType="touchUpInside" id="mgC-MM-Yk4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="2Sf-Bf-jVx"/>
+                                                    <constraint firstAttribute="width" constant="80" id="BcS-0s-LQ6"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="6CO-Xy-eVH" secondAttribute="bottom" constant="10" id="HZN-KZ-wye"/>
+                                            <constraint firstAttribute="trailing" secondItem="hXU-Si-LnU" secondAttribute="trailing" constant="15" id="OaU-hG-idE"/>
+                                            <constraint firstItem="hXU-Si-LnU" firstAttribute="top" secondItem="w5W-uw-mtd" secondAttribute="top" constant="10" id="XIS-32-0Bw"/>
+                                            <constraint firstItem="795-mN-qDj" firstAttribute="centerX" secondItem="w5W-uw-mtd" secondAttribute="centerX" id="d5x-mz-RZz"/>
+                                            <constraint firstItem="795-mN-qDj" firstAttribute="top" secondItem="hXU-Si-LnU" secondAttribute="bottom" constant="10" id="dzo-dZ-ZIR"/>
+                                            <constraint firstAttribute="bottom" secondItem="795-mN-qDj" secondAttribute="bottom" constant="10" id="ehm-Lc-JV5"/>
+                                            <constraint firstItem="6CO-Xy-eVH" firstAttribute="top" secondItem="hXU-Si-LnU" secondAttribute="bottom" constant="10" id="jAQ-XZ-zys"/>
+                                            <constraint firstItem="hXU-Si-LnU" firstAttribute="leading" secondItem="w5W-uw-mtd" secondAttribute="leading" constant="15" id="lhQ-By-gZQ"/>
+                                            <constraint firstItem="6CO-Xy-eVH" firstAttribute="centerX" secondItem="w5W-uw-mtd" secondAttribute="centerX" id="m5P-xL-Q3M"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Lnx-xS-5ge" firstAttribute="leading" secondItem="Exr-hv-G1Z" secondAttribute="leading" id="202-ZM-cqd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lnx-xS-5ge" secondAttribute="trailing" id="LQF-Kq-me4"/>
+                                    <constraint firstItem="w5W-uw-mtd" firstAttribute="top" secondItem="Lnx-xS-5ge" secondAttribute="bottom" id="bRX-O6-7R3"/>
+                                    <constraint firstItem="Lnx-xS-5ge" firstAttribute="top" secondItem="Exr-hv-G1Z" secondAttribute="top" id="c8h-Ka-Rr1"/>
+                                    <constraint firstItem="w5W-uw-mtd" firstAttribute="leading" secondItem="Exr-hv-G1Z" secondAttribute="leading" id="fsI-LZ-3aG"/>
+                                    <constraint firstAttribute="trailing" secondItem="w5W-uw-mtd" secondAttribute="trailing" id="sAN-dw-ukb"/>
+                                    <constraint firstAttribute="bottom" secondItem="w5W-uw-mtd" secondAttribute="bottom" id="xRX-Yy-77r"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Exr-hv-G1Z" firstAttribute="centerX" secondItem="GMY-Qk-xqL" secondAttribute="centerX" id="1eA-7l-Mon"/>
+                            <constraint firstItem="aE9-6C-HFR" firstAttribute="trailing" secondItem="Exr-hv-G1Z" secondAttribute="trailing" constant="40" id="Jdx-mD-BWP"/>
+                            <constraint firstItem="Exr-hv-G1Z" firstAttribute="centerY" secondItem="GMY-Qk-xqL" secondAttribute="centerY" id="UJw-Tn-8mT"/>
+                            <constraint firstItem="Exr-hv-G1Z" firstAttribute="leading" secondItem="aE9-6C-HFR" secondAttribute="leading" constant="40" id="Vub-Hw-Ap0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aE9-6C-HFR"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn_No" destination="0y6-IF-usn" id="sJa-ws-wcY"/>
+                        <outlet property="btn_Ok" destination="GYU-2U-eku" id="6tx-KJ-IrP"/>
+                        <outlet property="btn_Yes" destination="7V5-db-ZPA" id="g91-LS-vg0"/>
+                        <outlet property="lbl_Message" destination="hXU-Si-LnU" id="CMJ-5x-sLB"/>
+                        <outlet property="lbl_Title" destination="eOe-MM-H5F" id="K2j-6T-18P"/>
+                        <outlet property="spacing_Yesno_constraint" destination="dzo-dZ-ZIR" id="Cm6-g6-jPX"/>
+                        <outlet property="spacing_okbtn_constraint" destination="jAQ-XZ-zys" id="xyk-8y-3XC"/>
+                        <outlet property="viewOk" destination="6CO-Xy-eVH" id="DkP-7K-Ve5"/>
+                        <outlet property="viewYesNo" destination="795-mN-qDj" id="PZQ-z7-F4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kC-v4-H9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.54676258992806" y="5.9352517985611515"/>
+        </scene>
+    </scenes>
+</document>
